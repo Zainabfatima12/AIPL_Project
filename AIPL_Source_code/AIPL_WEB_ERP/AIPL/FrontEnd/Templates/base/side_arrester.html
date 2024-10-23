@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Agratas Infotech Pvt Ltd</title>
+
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Get in touch with Agratas Infotech Pvt Ltd. Fill out our contact form or reach us through our social media channels.">
+
+    <!-- Meta Keywords for SEO -->
+    <meta name="keywords" content="Contact Us, Agratas Infotech, Customer Support, Social Media, Inquiry">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Contact Us - Agratas Infotech Pvt Ltd">
+    <meta property="og:description" content="Contact Agratas Infotech Pvt Ltd for any inquiries or support.">
+    <meta property="og:url" content="URL_OF_THE_CONTACT_PAGE"> <!-- Replace with actual page URL -->
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Contact Us - Agratas Infotech Pvt Ltd">
+    <meta name="twitter:description" content="Get in touch with Agratas Infotech for support or inquiries.">
+
+    <!-- Include Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/side_arrester.css' %}">
+</head>
+<body>
+    <!-- Social Media Icons -->
+    <div class="social-icons" aria-label="Follow us on social media">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/company/agratas-infotech-pvt-ltd/posts/?feedView=all" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+    </div>
+
+    <!-- Contact Icon with Text -->
+    <a class="contact-icon" onclick="showContactForm()" aria-label="Contact Us">
+        <i class="fas fa-envelope"></i> <span>Contact Us</span>
+    </a>
+
+    <!-- Contact Form Container -->
+    <div class="contact-form-container" id="contactFormContainer" role="dialog" aria-labelledby="contactFormTitle" aria-hidden="true">
+        <!-- Contact Form -->
+        <form class="contact-form" id="contactForm" action="YOUR_FORM_SUBMISSION_URL" method="POST" role="form">
+            <span class="close-icon" onclick="hideContactForm()" aria-label="Close Form"><i class="fas fa-times"></i></span> <!-- Close icon -->
+            <h2 id="contactFormTitle">Get in Touch</h2>
+            <input type="text" placeholder="Full Name" name="fullName" required aria-required="true">
+            <input type="email" placeholder="Email Address" name="email" required aria-required="true">
+            <input type="tel" placeholder="Phone Number" name="phone">
+            <textarea placeholder="Message" name="message" required aria-required="true"></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+    <script src="{% static 'js/contact-us.js' %}"></script>
+</body>
+</html>

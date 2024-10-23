@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Why Choose Agratas Infotech? | Impact, Development, Support, Progress</title>
+        <meta name="description" content="Learn why Agratas Infotech is a leading company for innovation and progress with impactful solutions, continuous learning, and support for career growth.">
+        <meta name="keywords" content="Agratas Infotech, Impact, Development, Support, Progress, Innovation, Learning">
+        <meta name="author" content="Agratas Infotech">
+    </head>
+    
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/horizontal_tab.css' %}">
+<main>
+    <section class="tab__container">
+        <h1>Why AIPL ?</h1>
+        <div class="tab__title">
+          <button class="tab__button tab_button-active" onclick="openTab('one', this)">
+            <i class="fas fa-bullseye"></i>
+            Impact
+        </button>
+        <button class="tab__button" onclick="openTab('two', this)">
+            <i class="fas fa-graduation-cap"></i>
+            Development
+        </button>
+        <button class="tab__button" onclick="openTab('three', this)">
+            <i class="fas fa-hands-helping"></i>
+            Support
+        </button>
+        <button class="tab__button" onclick="openTab('four', this)">
+            <i class="fas fa-chart-line"></i>
+            Progress
+        </button>
+        </div>
+        <!---- Start tab ---->
+        <div id="one" class="tab__inside tab__inside-active">
+            <div class="tab__inside-img">
+                <img src="https://images.unsplash.com/photo-1504805572947-34fad45aed93?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Impact - Leading with purpose">
+            </div>
+            <div class="tab__inside-text">
+                <h3>Leading with purpose</h3>
+                <p>Through the application of innovation and our contextual knowledge, we give associates the opportunity to deliver transformative outcomes that benefit society at large and prove that anything is possible.</p>
+            </div>
+        </div>
+        <!---- End tab ---->
+
+        <!---- Start tab ---->
+        <div id="two" class="tab__inside">
+            <div class="tab__inside-img">
+                <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=1772&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Development">
+            </div>
+            <div class="tab__inside-text">
+                <h3>Continuous learning</h3>
+                <p>We equip our associates to deliver innovative solutions, by providing them with opportunities to access and learn from the vast collective experience that exists within AIPL. We ensure they remain at the cutting edge of change.</p>
+            </div>
+        </div>
+        <!---- End tab ---->
+
+        <!---- Start tab ---->
+        <div id="three" class="tab__inside">
+            <div class="tab__inside-img">
+                <img src="https://images.unsplash.com/photo-1455849318743-b2233052fcff?q=80&w=1769&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Support">
+            </div>
+            <div class="tab__inside-text">
+                <h3>Support</h3>
+                <p>Through upskilling and reskilling, and with opportunities to move across the business, our people, regardless of age or stage of their career, are supported to discover and become the professionals they were meant to be.</p>
+            </div>
+        </div>
+        <!---- End tab ---->
+
+        <!---- Start tab ---->
+        <div id="four" class="tab__inside">
+            <div class="tab__inside-img">
+                <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=1770&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Progress">
+            </div>
+            <div class="tab__inside-text">
+                <h3>Progress</h3>
+                <p>We see our people as long-term relationships that we build together and from which we all grow. We invest in them across the duration of their career and encourage them to strive for perpetual progress.</p>
+            </div>
+        </div>
+        <!---- End tab ---->
+    </section>
+</main>
+<script src="{% static 'js/horizontal_tab.js' %}"></script>

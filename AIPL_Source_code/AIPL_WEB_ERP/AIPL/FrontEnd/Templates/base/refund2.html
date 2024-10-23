@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Refund Policy - Agratas Infotech Pvt Ltd</title>
+
+    <!-- Meta Description for SEO -->
+    <meta name="description" content="Read Agratas Infotech Pvt Ltd's Refund Policy to understand the terms and conditions related to event registration fees, membership fees, application fees, and sponsorship fees.">
+
+    <!-- Meta Keywords for SEO -->
+    <meta name="keywords" content="Refund Policy, Agratas Infotech, Event Registration, Membership Fees, Application Fees, Sponsorship Fees">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Refund Policy - Agratas Infotech Pvt Ltd">
+    <meta property="og:description" content="Understand the refund terms for event registration fees, membership fees, application fees, and sponsorship fees.">
+    <meta property="og:url" content="URL_OF_THE_REFUND_POLICY_PAGE"> <!-- Replace with actual page URL -->
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Refund Policy - Agratas Infotech Pvt Ltd">
+    <meta name="twitter:description" content="Read about Agratas Infotech's refund policy for various fees.">
+    <meta name="twitter:image" content="URL_TO_IMAGE"> <!-- Replace with actual image URL -->
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/refund2.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        nav {
+            left: 0px;
+        }
+        /* Additional styles for layout and design */
+        .content-wrapper {
+            display: flex;
+            padding: 20px;
+        }
+        .refund-sidebar {
+            width: 25%; /* Sidebar width */
+            padding: 10px;
+            border-right: 1px solid #ccc;
+        }
+        .refund-content {
+            width: 75%; /* Content width */
+            padding: 10px;
+        }
+        h1, h4 {
+            color: #333; /* Set a consistent color for headers */
+        }
+        ul {
+            list-style-type: none; /* Remove bullet points */
+            padding: 0; /* Remove padding */
+        }
+        ul li {
+            margin-bottom: 10px; /* Add space between list items */
+        }
+        a {
+            text-decoration: none; /* Remove underline from links */
+            color: #007bff; /* Link color */
+        }
+        a:hover {
+            text-decoration: underline; /* Underline on hover for better UX */
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    {% include 'base/navbar.html' %}
+    <script src="{% static 'js/nav_configuration.js' %}"></script>
+
+    <!-- Content Wrapper -->
+    <div class="content-wrapper">
+        <div class="refund-sidebar">
+            <h4>Refund Policy</h4>
+            <ul>
+                <li><a href="#event-registration">Event Registration Fees</a></li>
+                <li><a href="#membership">Membership Fees</a></li>
+                <li><a href="#application">Application Fees</a></li>
+                <li><a href="#sponsorship">Sponsorship Fees</a></li>
+            </ul>
+        </div>
+
+        <div class="refund-content">
+            <h1>Refund Policy</h1>
+            <ul>
+                <li id="event-registration"><strong>Event Registration Fees:</strong> The registration fees for any event are non-refundable. Please ensure all details are correct before making the payment. No requests for refunds or exceptions will be considered by our team.</li>
+                <li id="membership"><strong>Membership Fees:</strong> All membership fees are non-refundable.</li>
+                <li id="application"><strong>Application Fees:</strong> Application fees are non-refundable.</li>
+                <li id="sponsorship"><strong>Sponsorship Fees:</strong> Sponsorship fees are non-refundable.</li>
+            </ul>
+        </div>
+    </div>
+
+    {% include 'base/footer.html' %}
+</body>
+</html>

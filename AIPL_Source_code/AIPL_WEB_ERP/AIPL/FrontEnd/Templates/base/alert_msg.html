@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <!-- Title tag  Meta Description for SEO --> -->
+    <title>User Notification System | Agratas Infotech</title>
+
+    
+    <meta name="description" content="Get success and error messages for Keyword Research and SEO tasks at Agratas Infotech. Enhance your SEO strategies and performance with clear notifications.">
+
+    <meta name="keywords" content="Agratas Infotech, Keyword Research, SEO notifications, success messages, error messages, SEO strategies, performance optimization">
+
+    <!-- Viewport for mobile optimization -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Implement Schema Markup for better SEO -->
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Keyword Research Notifications",
+      "description": "Get success and error messages related to Keyword Research and SEO."
+    }
+    </script>
+
+    <link rel="stylesheet" href="{% static 'css/alert_msg.css' %}">
+    
+      
+     
+</head>
+<body>
+
+    
+
+
+<!--Optimize Headings  h1  and h2
+<h1>Keyword Research: Success and Error Notifications</h1>-->
+
+{% if messages %}
+
+    <!--<h2>Notifications Related to Keyword Research:</h2>-->
+
+    {% for message in messages %}
+        {% if message.tags == 'success' %}
+            <div class="success">{{ message }}</div>
+        {% elif message.tags == 'error' %}
+            <div class="error">{{ message }}</div>
+        {% endif %}
+    {% endfor %}
+{% endif %}
+
+<!-- Image with alt text optimized for SEO
+<img src="{% static 'images/keyword_research.png' %}" alt="Keyword Research success" />
+
+ Internal linking for SEO 
+<p>To learn more about SEO strategies, visit our <a href="/seo-guide/">SEO Guide</a> or read our article on <a href="/advanced-keyword-research/">Advanced Keyword Research Techniques</a>.</p>
+
+ Compressed JavaScript and CSS for minimizing page load time 
+<link rel="stylesheet" href="{% static 'css/styles.min.css' %}">
+<script src="{% static 'js/main.min.js' %}"></script> -->
+
+
+<script src="{% static 'js/msgbox_configure.js' %}"></script>
+
+<!-- Prevent indexing of non-important pages -->
+{% if not important_page %}
+    <meta name="robots" content="noindex">
+{% endif %}
+
+<!-- Tracking code to monitor page visitors (Google Analytics) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_TRACKING_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_TRACKING_ID');
+</script>
+
+    
+</body>
+</html>
